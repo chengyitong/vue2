@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>版本控制 | 魔方校园APP后台管理系统</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="Author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="/res/common/images/logo.png" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/res/common/images/logo.png" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/res/common/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/res/js/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/res/common/css/base.min.css">
+    <link rel="stylesheet" href="/res/common/css/common.css">
+    <link rel="stylesheet" href="/res/css/style.css">
+    <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- head begin -->
+    <div class="head">
+        <div class="head_box">
+            <div class="inner wrp">
+                <h1 class="logo">
+                    <a href="index.html" title="魔方校园"></a>
+                    <p>魔方校园APP后台管理系统</p>
+                </h1>
+                <div class="account">
+                    <div class="account_info">
+                        你好，<em class="js_adminname"></em>
+                    </div>
+                    <div class="account_logout">
+                        <a href="javascript:;" onclick="MS.logout()">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- head end -->
+    <!-- content begin -->
+    <div class="content">
+        <div class="container_box">
+            <!-- sidebar begin -->
+            <div class="sidebar">
+                <div class="menu_box">
+                    <ul>
+                        <li><a href="/adminMFXY/index.html">代理管理</a></li>
+                        <li><a href="/adminMFXY/recharge.html">充值记录</a></li>
+                        <li><a href="/adminMFXY/school.html">学校管理</a></li>
+                        <li><a href="/adminMFXY/advertisement.html">广告管理</a></li>
+                        <li><a href="/adminMFXY/tag.html">标签管理</a></li>
+                        <li><a href="/adminMFXY/balance_recharge.html">设置余额充值</a></li>
+                        <li><a href="/adminMFXY/bill_recharge.html">设置话费充值</a></li>
+                        <li class="selected"><a href="/adminMFXY/version.html">版本控制</a></li>
+                        <li><a href="/adminMFXY/admin.html">内部管理员</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- sidebar end --> 
+
+			<!-- main begin -->
+			<div class="main">
+				<div class="main_hd">
+					<h2>APP版本控制
+						<div class="main_hd_search">
+                            <span class="btn btn-success" onclick="Version.createModalForUpdateVersion(0);">添加版本</span>
+						</div>
+					</h2>
+				</div>
+				<div class="main_bd">
+                    <div class="main_data">
+                        <div id="list"></div>
+                    </div>
+					<!-- fenye -->
+                    <div class="kkpager" id="kkpager"></div>
+				</div>
+			</div>
+			<!-- main end -->
+		</div>
+	</div>
+	<!-- content end -->
+	<!-- foot begin -->
+	<div class="foot">
+		<small>Copyright &copy; 2017 魔方校园. All Rights Reserved.</small>
+	</div>
+  <!-- foot end -->
+	<script src="/res/js/lib/jquery/jquery.min.js"></script>
+    <script src="/res/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/res/js/lib/validator/validator.min.js"></script>
+    <script src="/res/common/js/common.js"></script>
+    <script src="/res/kkpager/kkpager.js"></script>
+    <link rel="stylesheet" href="/res/kkpager/kkpager.css">
+    <script src="/res/js/version.js"></script>
+    <script>
+        $(document).ready(function(){
+            MS.getAdminInfo();
+            Version.getVersionList(1);
+        });
+    </script>
+</body>
+</html>

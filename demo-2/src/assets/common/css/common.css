@@ -1,0 +1,239 @@
+.fn-hide,
+.form-control.fn-hide {
+    display: none;
+}
+.nodata-tips {
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+/*table*/
+
+table,
+.table {
+    width: 100%;
+    text-align: left;
+    color: #313131;
+    border: 1px solid #d9dadc;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    white-space: normal;
+}
+
+table thead,
+.table thead {
+    height: 28px;
+    line-height: 28px;
+    background-color: #e5e5e5;
+}
+
+table tbody,
+.table tbody {
+    background-color: #fff;
+}
+
+table tr,
+table td,
+.table tr,
+.table td {
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table td,
+.table td {
+    padding: 6px 10px;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    mso-number-format: '\@';
+    line-height: 27px;
+}
+
+table td input[type="checkbox"],
+.table td input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+
+/* 遮罩层 */
+
+.dialog-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 9999;
+    display: none;
+}
+
+.dialog-inner {
+    position: relative;
+    margin-top: 80px;
+    left: 50%;
+    margin-left: -166px;
+    width: 332px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    overflow: hidden;
+}
+
+.dialog-header {
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background-color: #217ce3;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dialog-header-warning {
+    background-color: #f33645;
+}
+
+.dialog-content {
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.dialog-content p {
+    margin-bottom: 10px;
+}
+
+.dialog-content p .error-tips {
+    margin-left: 20px;
+    line-height: 14px;
+    color: #f33645;
+    display: none;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.dialog-content p .icon-error {
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+    background: url('./images/icon_error.png') center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.dialog-content .icon-warning {
+    margin: 3px 5px 0 0;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url('./images/icon_warning.png') center center no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.dialog-content ul li {
+    width: 100%;
+    color: #313131;
+}
+
+.dialog-content ul li:not(:first-child) p {
+    margin-top: 19px;
+}
+
+.dialog-content ul li input {
+    margin: 4px 0 8px 0;
+    width: 260px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e5e5e5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.dialog-content ul li input:focus {
+    border-color: #217ce3;
+}
+
+.dialog-content ul li input[type="checkbox"],
+.dialog-content ul li input[type="radio"] {
+    margin: -1px 6px 0 0;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: none;
+}
+
+.dialog-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #e5e5e5;
+    color: #666;
+    border-radius: 5px;
+}
+
+.dialog-content small {
+    color: #b5b5b5;
+}
+
+.dialog-footer {
+    text-align: center;
+    padding: 16px 0;
+    background-color: #efefef;
+}
+
+.dialog-footer .btn {
+    margin: 0 10px;
+}
+
+
+/* 通用消息提示框 */
+
+.dialog-tips-inner {
+    position: relative;
+    padding: 20px;
+    line-height: 1.6;
+    top: 45%;
+    left: 50%;
+    margin-left: -155px;
+    width: 300px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    font-size: 16px;
+}
+
+.dialog-white-inner {
+    position: relative;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0 0 -60px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #313131;
+    font-size: 16px;
+}
+
+.dialog-white-inner img {
+    margin: 16px 0;
+}

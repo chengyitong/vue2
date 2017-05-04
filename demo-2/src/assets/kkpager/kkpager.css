@@ -1,0 +1,114 @@
+.kkpager {
+	margin: 0 auto;
+	clear: both;
+	color: #999;
+	padding: 5px 0;
+	font-size: 13px;
+	text-align: center;
+}
+.kkpager a {
+	float: left;
+	border: 1px solid #ccc;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+	background: #fff;
+	text-decoration: none;
+	color: #999;
+}
+.kkpager span.disabled{
+	float: left;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #dfdfdf;
+	background-color: #fff;
+	color: #dfdfdf;
+}
+.kkpager span.curr{
+	float: left;
+	border: 1px solid #44b549;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #f0fdff;
+	color: #44b549;
+}
+.kkpager a:hover{
+	border: 1px solid #44b549; 
+	background-color: #44b549; 
+	color: #fff;
+}
+.kkpager span.normalsize{
+}
+#kkpager_gopage_wrap{
+	position:relative;
+	left: 0px;
+	top: 0px;
+}
+#kkpager_btn_go {
+	width: 44px;
+	height: 18px;
+	border: 0px;
+	overflow: hidden;
+	line-height: 140%;
+	padding: 0px;
+	margin: 2px 0 0 15px;
+	text-align:center;
+	cursor:pointer;
+	background-color: #44b549;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	display:none;
+}
+#kkpager_btn_go_input{
+	width: 36px;
+	height: 18px;
+	color: #999;
+	text-align: center;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 1px solid #dfdfdf;
+	position: relative;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	left: 0;
+	top: 0;
+	outline: none;
+}
+
+#kkpager_btn_go_input.focus{
+	border-color: #44b549;
+}
+
+.kkpager .pageBtnWrap {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+}
+.kkpager .spanDot{
+	float: left;
+	margin-right: 5px;
+}
+
+.kkpager .currPageNum{
+	color: #44b549;
+}
+
+.kkpager .infoTextAndGoPageBtnWrap{
+	padding-top: 5px;
+}
